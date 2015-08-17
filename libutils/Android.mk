@@ -94,6 +94,10 @@ ifeq ($(TARGET_BOARD_PLATFORM),mt6592)
 LOCAL_SRC_FILES += MediatekHacks.cpp
 endif
 
+ifeq ($(TARGET_BOARD_PLATFORM),mt6589)
+LOCAL_SRC_FILES += MediatekHacks.cpp
+endif
+
 LOCAL_C_INCLUDES += \
 		bionic/libc \
 		external/zlib
