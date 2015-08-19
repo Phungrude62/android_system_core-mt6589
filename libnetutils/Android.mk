@@ -8,6 +8,10 @@ LOCAL_SRC_FILES := \
         ifc_utils.c \
         packet.c
 
+ifeq ($(TARGET_BOARD_PLATFORM),mt6589)
+LOCAL_SRC_FILES += MediatekHacks.cpp
+endif
+
 LOCAL_SHARED_LIBRARIES := \
         libcutils \
         liblog
